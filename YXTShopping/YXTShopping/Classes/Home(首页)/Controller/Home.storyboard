@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TfY-Zj-Ggm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="8sf-lM-Nkc">
+            <objects>
+                <viewController id="jhy-cu-qWk" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9NM-vR-gVv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1i0-V9-hxn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TOe-zj-G0f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="ZvR-Ev-0sy">
+                        <barButtonItem key="rightBarButtonItem" title="公告" id="Yv3-Es-ViN">
+                            <connections>
+                                <segue destination="ydw-fG-LVu" kind="show" id="rYJ-Vh-eCd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stZ-H8-Fhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="385"/>
+        </scene>
+        <!--商城公告-->
+        <scene sceneID="Sz5-ug-EJS">
+            <objects>
+                <viewController title="商城公告" id="ydw-fG-LVu" customClass="YXTBulletinVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PLf-YU-PpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRY-a8-9sZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2QK-Ql-F9a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B5a-tp-1xi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fRY-a8-9sZ" firstAttribute="top" secondItem="B5a-tp-1xi" secondAttribute="bottom" constant="268" id="1Bj-ub-Dnd"/>
+                            <constraint firstItem="B5a-tp-1xi" firstAttribute="leading" secondItem="2QK-Ql-F9a" secondAttribute="leadingMargin" constant="44" id="NBn-HL-Rag"/>
+                            <constraint firstItem="B5a-tp-1xi" firstAttribute="top" secondItem="PLf-YU-PpC" secondAttribute="bottom" constant="161" id="vSD-MH-WZ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B5a-tp-1xi" secondAttribute="trailing" constant="43" id="yOo-tr-AYP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="B5a-tp-1xi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Bj-ub-Dnd"/>
+                                <exclude reference="NBn-HL-Rag"/>
+                                <exclude reference="vSD-MH-WZ1"/>
+                                <exclude reference="yOo-tr-AYP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="B5a-tp-1xi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Bj-ub-Dnd"/>
+                                <include reference="NBn-HL-Rag"/>
+                                <include reference="vSD-MH-WZ1"/>
+                                <include reference="yOo-tr-AYP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjq-yc-uAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501.5" y="384.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n1x-Ml-kNE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TfY-Zj-Ggm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="foi-cd-PT1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jhy-cu-qWk" kind="relationship" relationship="rootViewController" id="Kgk-04-kWK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avZ-5s-qxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.5" y="380.25"/>
+        </scene>
+    </scenes>
+</document>

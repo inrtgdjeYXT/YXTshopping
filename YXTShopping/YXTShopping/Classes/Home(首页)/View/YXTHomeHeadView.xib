@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXTHomeHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="vdN-bw-Uaf">
+                    <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="39" id="JEX-VA-gBJ"/>
+                        <constraint firstAttribute="height" constant="37" id="Vjc-h2-Spj"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JEX-VA-gBJ"/>
+                            <exclude reference="Vjc-h2-Spj"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="JEX-VA-gBJ"/>
+                            <include reference="Vjc-h2-Spj"/>
+                        </mask>
+                    </variation>
+                </pageControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvS-PJ-dLe">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGc-sy-3pW">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="新品上架">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="新品上架">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectedButtonIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="q9G-s5-mGE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-3n-Y3V">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="热卖商品">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectedButtonIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="88n-bI-t1X"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6C-wP-ZRO">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="特价商品">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectedButtonIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="8RG-bk-zrc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gGc-sy-3pW" firstAttribute="top" secondItem="fvS-PJ-dLe" secondAttribute="bottom" id="1Dp-Vp-YNJ"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="leading" secondItem="gGc-sy-3pW" secondAttribute="trailing" id="BOZ-XL-VlG"/>
+                <constraint firstAttribute="bottom" secondItem="Bim-3n-Y3V" secondAttribute="bottom" id="GCd-db-VEE"/>
+                <constraint firstItem="j6C-wP-ZRO" firstAttribute="leading" secondItem="Bim-3n-Y3V" secondAttribute="trailing" id="HI7-69-Byb"/>
+                <constraint firstItem="vdN-bw-Uaf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IHv-ex-XbJ"/>
+                <constraint firstAttribute="bottom" secondItem="fvS-PJ-dLe" secondAttribute="bottom" constant="30" id="J1W-yd-qPF"/>
+                <constraint firstItem="j6C-wP-ZRO" firstAttribute="height" secondItem="gGc-sy-3pW" secondAttribute="height" id="JOc-65-ggf"/>
+                <constraint firstItem="j6C-wP-ZRO" firstAttribute="leading" secondItem="Bim-3n-Y3V" secondAttribute="trailing" id="Nxb-kQ-hmA"/>
+                <constraint firstItem="fvS-PJ-dLe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oqk-HB-fbT"/>
+                <constraint firstItem="fvS-PJ-dLe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QpB-zT-9XM"/>
+                <constraint firstAttribute="bottom" secondItem="j6C-wP-ZRO" secondAttribute="bottom" id="RZc-kO-P1W"/>
+                <constraint firstAttribute="bottom" secondItem="vdN-bw-Uaf" secondAttribute="bottom" constant="-9" id="UdS-Gl-rdx">
+                    <variation key="heightClass=regular-widthClass=compact" constant="32"/>
+                </constraint>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="leading" secondItem="gGc-sy-3pW" secondAttribute="trailing" id="WXc-QC-su8"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="top" secondItem="fvS-PJ-dLe" secondAttribute="bottom" id="Xdy-yb-wGX"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="top" secondItem="fvS-PJ-dLe" secondAttribute="bottom" id="YKG-Sj-qor"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="height" secondItem="gGc-sy-3pW" secondAttribute="height" id="aM6-SY-vEO"/>
+                <constraint firstAttribute="bottom" secondItem="gGc-sy-3pW" secondAttribute="bottom" id="cPO-OF-xF3"/>
+                <constraint firstAttribute="trailing" secondItem="j6C-wP-ZRO" secondAttribute="trailing" id="e4q-0U-IOc"/>
+                <constraint firstItem="gGc-sy-3pW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="feb-hX-g8G"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="leading" secondItem="gGc-sy-3pW" secondAttribute="trailing" id="hhm-iL-wEV"/>
+                <constraint firstAttribute="bottom" secondItem="Bim-3n-Y3V" secondAttribute="bottom" id="jMf-d0-zOb"/>
+                <constraint firstAttribute="trailing" secondItem="fvS-PJ-dLe" secondAttribute="trailing" id="lf6-XS-7RL"/>
+                <constraint firstItem="Bim-3n-Y3V" firstAttribute="width" secondItem="gGc-sy-3pW" secondAttribute="width" id="ni4-Pa-s7w"/>
+                <constraint firstItem="j6C-wP-ZRO" firstAttribute="width" secondItem="gGc-sy-3pW" secondAttribute="width" id="oH3-Uu-jel"/>
+                <constraint firstItem="j6C-wP-ZRO" firstAttribute="top" secondItem="fvS-PJ-dLe" secondAttribute="bottom" id="tmb-E4-KrC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="vdN-bw-Uaf"/>
+                    <exclude reference="fvS-PJ-dLe"/>
+                    <exclude reference="gGc-sy-3pW"/>
+                    <exclude reference="Bim-3n-Y3V"/>
+                    <exclude reference="j6C-wP-ZRO"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="IHv-ex-XbJ"/>
+                    <exclude reference="UdS-Gl-rdx"/>
+                    <exclude reference="BOZ-XL-VlG"/>
+                    <exclude reference="GCd-db-VEE"/>
+                    <exclude reference="WXc-QC-su8"/>
+                    <exclude reference="Xdy-yb-wGX"/>
+                    <exclude reference="YKG-Sj-qor"/>
+                    <exclude reference="aM6-SY-vEO"/>
+                    <exclude reference="hhm-iL-wEV"/>
+                    <exclude reference="jMf-d0-zOb"/>
+                    <exclude reference="ni4-Pa-s7w"/>
+                    <exclude reference="1Dp-Vp-YNJ"/>
+                    <exclude reference="cPO-OF-xF3"/>
+                    <exclude reference="feb-hX-g8G"/>
+                    <exclude reference="HI7-69-Byb"/>
+                    <exclude reference="JOc-65-ggf"/>
+                    <exclude reference="Nxb-kQ-hmA"/>
+                    <exclude reference="RZc-kO-P1W"/>
+                    <exclude reference="e4q-0U-IOc"/>
+                    <exclude reference="oH3-Uu-jel"/>
+                    <exclude reference="tmb-E4-KrC"/>
+                    <exclude reference="J1W-yd-qPF"/>
+                    <exclude reference="Oqk-HB-fbT"/>
+                    <exclude reference="QpB-zT-9XM"/>
+                    <exclude reference="lf6-XS-7RL"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="vdN-bw-Uaf"/>
+                    <include reference="fvS-PJ-dLe"/>
+                    <include reference="gGc-sy-3pW"/>
+                    <include reference="Bim-3n-Y3V"/>
+                    <include reference="j6C-wP-ZRO"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="IHv-ex-XbJ"/>
+                    <include reference="UdS-Gl-rdx"/>
+                    <include reference="BOZ-XL-VlG"/>
+                    <include reference="GCd-db-VEE"/>
+                    <include reference="WXc-QC-su8"/>
+                    <include reference="Xdy-yb-wGX"/>
+                    <include reference="YKG-Sj-qor"/>
+                    <include reference="aM6-SY-vEO"/>
+                    <include reference="hhm-iL-wEV"/>
+                    <include reference="jMf-d0-zOb"/>
+                    <include reference="ni4-Pa-s7w"/>
+                    <include reference="1Dp-Vp-YNJ"/>
+                    <include reference="cPO-OF-xF3"/>
+                    <include reference="feb-hX-g8G"/>
+                    <include reference="HI7-69-Byb"/>
+                    <include reference="JOc-65-ggf"/>
+                    <include reference="Nxb-kQ-hmA"/>
+                    <include reference="RZc-kO-P1W"/>
+                    <include reference="e4q-0U-IOc"/>
+                    <include reference="oH3-Uu-jel"/>
+                    <include reference="tmb-E4-KrC"/>
+                    <include reference="J1W-yd-qPF"/>
+                    <include reference="Oqk-HB-fbT"/>
+                    <include reference="QpB-zT-9XM"/>
+                    <include reference="lf6-XS-7RL"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="firstGoodsBtn" destination="gGc-sy-3pW" id="uqq-xe-jpK"/>
+                <outlet property="pageControll" destination="vdN-bw-Uaf" id="17M-v0-uuD"/>
+                <outlet property="scrollView" destination="fvS-PJ-dLe" id="GZf-zq-T9A"/>
+            </connections>
+            <point key="canvasLocation" x="114" y="-242.5"/>
+        </view>
+    </objects>
+</document>

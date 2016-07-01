@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  YXTShopping
+//
+//  Created by 汤天明 on 16/7/1.
+//  Copyright © 2016年 easysay. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define YXTScreenW ([[UIScreen mainScreen] bounds].size.width)
+
+#define YXTScreenH ([[UIScreen mainScreen] bounds].size.height)
+
+#define YXTWindow ([[UIApplication sharedApplication].delegate window])
+
+
+#ifdef DEBUG
+#define NJLog(...) NSLog(__VA_ARGS__)
+#else
+#define NJLog(...)
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
