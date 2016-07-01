@@ -10,4 +10,6 @@
 
 @interface YXTBulletinVC : UIViewController
 
+@property(nonatomic,strong)NSMutableArray * bulletinArrays;
+
 @end

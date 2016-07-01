@@ -7,11 +7,11 @@
 //
 
 #import "HomeViewController.h"
-//#import "AFNetworking.h"
-//#import "UIKit+AFNetworking.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
 #import "YXTGoodsModel.h"
 #import "YXTHomeHeadView.h"
-
+#import "NSArray+Log.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,YXThomeHeadViewDelegate>
 
@@ -42,8 +42,43 @@
     
     [self selectedButtonWith:0];
     
+    [self loadDataSource];
+    
 }
 
+// 182.92.194.5
+
+-(void)loadDataSource
+{
+   
+    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+   
+    NSString *str = [NSString stringWithFormat:@"%@",@"http://115.159.1.248:56666/xinwen/getnews.php?id=1"];
+    // http://115.159.1.248:56666/xinwen/getnews.php?id=1
+    
+    NSString *str2 = [NSString stringWithFormat:@"%@",@"http://182.92.194.5/api/product/hotSale.action"];
+    
+    [manager POST:str2 parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *array = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+        for (NSDictionary *obj in array) {
+            NJLog(@"%@",obj);
+        }
+        NJLog(@"%@",responseObject);
+        NJLog(@"成功解析数据");
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (error) {
+            NJLog(@":错误%@",error);
+        }
+        
+    }];
+    
+   // [manager POST:<#(nonnull NSString *)#> parameters:<#(nullable id)#> progress:<#^(NSProgress * _Nonnull uploadProgress)uploadProgress#> success:<#^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)success#> failure:<#^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)failure#>];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -68,10 +103,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"%ld",indexPath.row);
+    
+    
 }
 
 #pragma headView代理方法的实现
-//  根据按钮点击不同 加载下面表视图的内容
+/** 
+ 根据按钮点击不同 加载下面表视图的内容,由于目前接口文档不完整，只能使用测试数据
+ */
 -(void)selectedButtonWith:(NSInteger)index
 {
     NSLog(@"%ld",index);

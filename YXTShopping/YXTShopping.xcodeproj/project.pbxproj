@@ -10,6 +10,10 @@
 		11ACF6A41D25F0A40000257F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ACF6A31D25F0A40000257F /* AppDelegate.m */; };
 		11ACF6A61D25F0B70000257F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11ACF6A51D25F0B70000257F /* Info.plist */; };
 		11ACF6A81D25F0C30000257F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ACF6A71D25F0C30000257F /* Assets.xcassets */; };
+		60319D7B1D2619B40031ABA5 /* detailBulletinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60319D791D2619B40031ABA5 /* detailBulletinVC.m */; };
+		60319D7C1D2619B40031ABA5 /* detailBulletinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60319D7A1D2619B40031ABA5 /* detailBulletinVC.xib */; };
+		60319D801D26616F0031ABA5 /* DetailProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60319D7E1D26616F0031ABA5 /* DetailProductVC.m */; };
+		60319D811D26616F0031ABA5 /* DetailProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60319D7F1D26616F0031ABA5 /* DetailProductVC.xib */; };
 		609686AB1D25EB5200008C96 /* YXTCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609686AA1D25EB5200008C96 /* YXTCartViewController.m */; };
 		609686AD1D25EB8800008C96 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609686AC1D25EB8800008C96 /* OrderStoryboard.storyboard */; };
 		60E943631D254E5700D30959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E943621D254E5700D30959 /* main.m */; };
@@ -98,7 +102,13 @@
 		11ACF6A31D25F0A40000257F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YXTShopping/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		11ACF6A51D25F0B70000257F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YXTShopping/Info.plist; sourceTree = SOURCE_ROOT; };
 		11ACF6A71D25F0C30000257F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = YXTShopping/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		609686A81D25E79E00008C96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		60319D781D2619B40031ABA5 /* detailBulletinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailBulletinVC.h; sourceTree = "<group>"; };
+		60319D791D2619B40031ABA5 /* detailBulletinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailBulletinVC.m; sourceTree = "<group>"; };
+		60319D7A1D2619B40031ABA5 /* detailBulletinVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detailBulletinVC.xib; sourceTree = "<group>"; };
+		60319D7D1D26616F0031ABA5 /* DetailProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailProductVC.h; sourceTree = "<group>"; };
+		60319D7E1D26616F0031ABA5 /* DetailProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailProductVC.m; sourceTree = "<group>"; };
+		60319D7F1D26616F0031ABA5 /* DetailProductVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailProductVC.xib; sourceTree = "<group>"; };
+		609686A81D25E79E00008C96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		609686A91D25EB5200008C96 /* YXTCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTCartViewController.h; sourceTree = "<group>"; };
 		609686AA1D25EB5200008C96 /* YXTCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTCartViewController.m; sourceTree = "<group>"; };
 		609686AC1D25EB8800008C96 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
@@ -257,7 +267,6 @@
 		60E943551D254E5700D30959 = {
 			isa = PBXGroup;
 			children = (
-				609686A81D25E79E00008C96 /* PrefixHeader.pch */,
 				60E943601D254E5700D30959 /* YXTShopping */,
 				60E9437A1D254E5700D30959 /* YXTShoppingTests */,
 				60E943851D254E5800D30959 /* YXTShoppingUITests */,
@@ -287,6 +296,7 @@
 		60E943611D254E5700D30959 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				609686A81D25E79E00008C96 /* PrefixHeader.pch */,
 				11ACF6A51D25F0B70000257F /* Info.plist */,
 				60E943621D254E5700D30959 /* main.m */,
 			);
@@ -410,6 +420,12 @@
 				60E9439F1D2552B500D30959 /* HomeViewController.m */,
 				60E943A01D2552B500D30959 /* YXTBulletinVC.h */,
 				60E943A11D2552B500D30959 /* YXTBulletinVC.m */,
+				60319D781D2619B40031ABA5 /* detailBulletinVC.h */,
+				60319D791D2619B40031ABA5 /* detailBulletinVC.m */,
+				60319D7A1D2619B40031ABA5 /* detailBulletinVC.xib */,
+				60319D7D1D26616F0031ABA5 /* DetailProductVC.h */,
+				60319D7E1D26616F0031ABA5 /* DetailProductVC.m */,
+				60319D7F1D26616F0031ABA5 /* DetailProductVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -644,6 +660,7 @@
 				TargetAttributes = {
 					60E9435D1D254E5700D30959 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7XLMJ7XCHC;
 					};
 					60E943761D254E5700D30959 = {
 						CreatedOnToolsVersion = 7.2;
@@ -687,7 +704,9 @@
 				609686AD1D25EB8800008C96 /* OrderStoryboard.storyboard in Resources */,
 				60E943B71D2552B500D30959 /* YXTGoodsCell.xib in Resources */,
 				60E9444E1D25558E00D30959 /* ZMLoginViewController.xib in Resources */,
+				60319D7C1D2619B40031ABA5 /* detailBulletinVC.xib in Resources */,
 				60E943B91D2552B500D30959 /* YXTHomeHeadView.xib in Resources */,
+				60319D811D26616F0031ABA5 /* DetailProductVC.xib in Resources */,
 				11ACF6A61D25F0B70000257F /* Info.plist in Resources */,
 				60E944531D25558E00D30959 /* ZMRegistViewController.xib in Resources */,
 			);
@@ -738,6 +757,7 @@
 				60E9441F1D2554FE00D30959 /* SDImageCache.m in Sources */,
 				60E943B11D2552B500D30959 /* HomeViewController.m in Sources */,
 				60E9444F1D25558E00D30959 /* ZMUserManager.m in Sources */,
+				60319D7B1D2619B40031ABA5 /* detailBulletinVC.m in Sources */,
 				60E9443A1D2554FE00D30959 /* UIWebView+AFNetworking.m in Sources */,
 				60E9444C1D25558E00D30959 /* ErrorView.m in Sources */,
 				60E944391D2554FE00D30959 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -762,6 +782,7 @@
 				60E944281D2554FE00D30959 /* UIImage+MultiFormat.m in Sources */,
 				60E944521D25558E00D30959 /* ZMRegistViewController.m in Sources */,
 				60E944191D2554FE00D30959 /* AFSecurityPolicy.m in Sources */,
+				60319D801D26616F0031ABA5 /* DetailProductVC.m in Sources */,
 				60E944201D2554FE00D30959 /* SDWebImageCompat.m in Sources */,
 				60E944361D2554FE00D30959 /* UIButton+AFNetworking.m in Sources */,
 				60E943B81D2552B500D30959 /* YXTHomeHeadView.m in Sources */,
@@ -906,6 +927,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
@@ -913,6 +936,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.easysay.YXTShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -920,6 +944,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
@@ -927,6 +953,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.easysay.YXTShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
