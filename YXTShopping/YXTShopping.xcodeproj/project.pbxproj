@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11ACF6A41D25F0A40000257F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ACF6A31D25F0A40000257F /* AppDelegate.m */; };
+		11ACF6A61D25F0B70000257F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11ACF6A51D25F0B70000257F /* Info.plist */; };
+		11ACF6A81D25F0C30000257F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ACF6A71D25F0C30000257F /* Assets.xcassets */; };
 		609686AB1D25EB5200008C96 /* YXTCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609686AA1D25EB5200008C96 /* YXTCartViewController.m */; };
 		609686AD1D25EB8800008C96 /* OrderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609686AC1D25EB8800008C96 /* OrderStoryboard.storyboard */; };
 		60E943631D254E5700D30959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E943621D254E5700D30959 /* main.m */; };
-		60E943661D254E5700D30959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E943651D254E5700D30959 /* AppDelegate.m */; };
-		60E9436E1D254E5700D30959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E9436D1D254E5700D30959 /* Assets.xcassets */; };
 		60E943711D254E5700D30959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E9436F1D254E5700D30959 /* LaunchScreen.storyboard */; };
 		60E9437C1D254E5700D30959 /* YXTShoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E9437B1D254E5700D30959 /* YXTShoppingTests.m */; };
 		60E943871D254E5800D30959 /* YXTShoppingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E943861D254E5800D30959 /* YXTShoppingUITests.m */; };
@@ -93,17 +94,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11ACF6A21D25F0A40000257F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = YXTShopping/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		11ACF6A31D25F0A40000257F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YXTShopping/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		11ACF6A51D25F0B70000257F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YXTShopping/Info.plist; sourceTree = SOURCE_ROOT; };
+		11ACF6A71D25F0C30000257F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = YXTShopping/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		609686A81D25E79E00008C96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		609686A91D25EB5200008C96 /* YXTCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTCartViewController.h; sourceTree = "<group>"; };
 		609686AA1D25EB5200008C96 /* YXTCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTCartViewController.m; sourceTree = "<group>"; };
 		609686AC1D25EB8800008C96 /* OrderStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderStoryboard.storyboard; sourceTree = "<group>"; };
 		60E9435E1D254E5700D30959 /* YXTShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXTShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E943621D254E5700D30959 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		60E943641D254E5700D30959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		60E943651D254E5700D30959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		60E9436D1D254E5700D30959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		60E943701D254E5700D30959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60E943721D254E5700D30959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		60E943771D254E5700D30959 /* YXTShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXTShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E9437B1D254E5700D30959 /* YXTShoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXTShoppingTests.m; sourceTree = "<group>"; };
 		60E9437D1D254E5700D30959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -286,6 +287,7 @@
 		60E943611D254E5700D30959 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11ACF6A51D25F0B70000257F /* Info.plist */,
 				60E943621D254E5700D30959 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -392,11 +394,10 @@
 		60E9439B1D254F7200D30959 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				60E943721D254E5700D30959 /* Info.plist */,
+				11ACF6A71D25F0C30000257F /* Assets.xcassets */,
+				11ACF6A21D25F0A40000257F /* AppDelegate.h */,
+				11ACF6A31D25F0A40000257F /* AppDelegate.m */,
 				60E9436F1D254E5700D30959 /* LaunchScreen.storyboard */,
-				60E9436D1D254E5700D30959 /* Assets.xcassets */,
-				60E943641D254E5700D30959 /* AppDelegate.h */,
-				60E943651D254E5700D30959 /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -681,12 +682,13 @@
 			files = (
 				60E943B01D2552B500D30959 /* Home.storyboard in Resources */,
 				60E9442F1D2554FE00D30959 /* SVProgressHUD.bundle in Resources */,
+				11ACF6A81D25F0C30000257F /* Assets.xcassets in Resources */,
 				60E943711D254E5700D30959 /* LaunchScreen.storyboard in Resources */,
 				609686AD1D25EB8800008C96 /* OrderStoryboard.storyboard in Resources */,
 				60E943B71D2552B500D30959 /* YXTGoodsCell.xib in Resources */,
 				60E9444E1D25558E00D30959 /* ZMLoginViewController.xib in Resources */,
-				60E9436E1D254E5700D30959 /* Assets.xcassets in Resources */,
 				60E943B91D2552B500D30959 /* YXTHomeHeadView.xib in Resources */,
+				11ACF6A61D25F0B70000257F /* Info.plist in Resources */,
 				60E944531D25558E00D30959 /* ZMRegistViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,7 +716,6 @@
 			files = (
 				60E943B41D2552B500D30959 /* YXTGoodsModel.m in Sources */,
 				60E944251D2554FE00D30959 /* SDWebImagePrefetcher.m in Sources */,
-				60E943661D254E5700D30959 /* AppDelegate.m in Sources */,
 				609686AB1D25EB5200008C96 /* YXTCartViewController.m in Sources */,
 				60E944291D2554FE00D30959 /* UIImage+WebP.m in Sources */,
 				60E9442B1D2554FE00D30959 /* UIImageView+WebCache.m in Sources */,
@@ -732,6 +733,7 @@
 				60E944171D2554FE00D30959 /* AFHTTPSessionManager.m in Sources */,
 				60E944371D2554FE00D30959 /* UIImageView+AFNetworking.m in Sources */,
 				60E944501D25558E00D30959 /* ZMUserViewController.m in Sources */,
+				11ACF6A41D25F0A40000257F /* AppDelegate.m in Sources */,
 				60E944321D2554FE00D30959 /* AFAutoPurgingImageCache.m in Sources */,
 				60E9441F1D2554FE00D30959 /* SDImageCache.m in Sources */,
 				60E943B11D2552B500D30959 /* HomeViewController.m in Sources */,
